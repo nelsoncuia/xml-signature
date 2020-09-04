@@ -1,0 +1,25 @@
+{
+  "name": "xml-crypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Crypto.js",
+  "dependencies": {
+    "jsrsasign": "^9.1.5",
+    "jsrsasign-util": "^1.0.0",
+    "xml-crypto": "^1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsoncuia/xml-signature.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsoncuia/xml-signature/issues"
+  },
+  "homepage": "https://github.com/nelsoncuia/xml-signature#readme"
+}

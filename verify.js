@@ -4,7 +4,7 @@ var select = require('xml-crypto').xpath
 , FileKeyInfo = require('xml-crypto').FileKeyInfo  
 , fs = require('fs')
 
-var xml = fs.readFileSync("signed4.xml").toString()
+var xml = fs.readFileSync("signed8.xml").toString()
 var doc = new dom().parseFromString(xml)    
 
 var signature = select(doc, "//*[local-name(.)='Signature' and namespace-uri(.)='http://www.w3.org/2000/09/xmldsig#']")[0]
@@ -13,5 +13,5 @@ sig.keyInfoProvider = new FileKeyInfo("cert.pem")
 sig.loadSignature(signature)
 var res = sig.checkSignature(xml)
 console.log(res)
-console.log(sig.keyInfo)
+
 if (!res) console.log(sig.validationErrors)
